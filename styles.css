@@ -429,16 +429,17 @@ section {
     left: 15px;
 }
 
-.image-placeholder {
-    position: relative;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.image-placeholder svg {
+.profile-image {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 4px;
+    filter: grayscale(30%);
+    transition: var(--transition);
+}
+
+.image-wrapper:hover .profile-image {
+    filter: grayscale(0%);
 }
 
 @media (max-width: 768px) {
