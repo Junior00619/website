@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Pena - Software Engineer</title>
+    <meta name="description" content="Software Engineer specializing in robotics, full-stack development, and distributed systems. Experience in ROS2, Spring Boot, React, and Python.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">AP</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting fade-in">Hi, my name is</p>
+                <h1 class="hero-name fade-in">Alan Pena.</h1>
+                <h2 class="hero-tagline fade-in">I build systems that bridge the physical and digital.</h2>
+                <p class="hero-description fade-in">
+                    I'm a software engineer specializing in <span class="highlight">robotics systems</span>, 
+                    <span class="highlight">distributed architectures</span>, and <span class="highlight">full-stack development</span>. 
+                    Currently working on autonomous UAV platforms at MindsEye Robotics Corp.
+                </p>
+                <div class="hero-cta fade-in">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="mailto:alanpena91@gmail.com" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a software engineer who thrives at the intersection of software and hardware. 
+                        My journey began with web development, building enterprise banking platforms, but I've 
+                        evolved into working on cutting-edge robotics systems—specifically multi-UAV rescue operations.
+                    </p>
+                    <p>
+                        At <a href="#" class="inline-link">MindsEye Robotics Corp</a>, I build real-time operator 
+                        dashboards that turn complex sensor streams into actionable intelligence. I solve problems 
+                        like containerized ROS2 networking, low-latency video streaming, and mission-critical safety systems.
+                    </p>
+                    <p>
+                        My background spans from <strong>Spring Boot microservices</strong> in financial systems to 
+                        <strong>ROS2 pub/sub architectures</strong> for autonomous drones. I believe the best 
+                        engineers are versatile—equally comfortable debugging Docker networking as they are 
+                        optimizing React renders.
+                    </p>
+                    <p class="about-tech-intro">Here are some technologies I work with:</p>
+                    <ul class="tech-list">
+                        <li>ROS / ROS2</li>
+                        <li>Python (Flask, FastAPI)</li>
+                        <li>Java & Spring Boot</li>
+                        <li>React & Angular</li>
+                        <li>Docker & Kubernetes</li>
+                        <li>PostgreSQL / MongoDB</li>
+                        <li>TypeScript</li>
+                        <li>PX4 Autopilot</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="400" fill="#0a192f"/>
+                                <text x="200" y="200" text-anchor="middle" fill="#64ffda" font-size="120" font-family="JetBrains Mono">AP</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span>
+                Where I've Worked
+            </h2>
+            <div class="experience-container">
+                <div class="experience-tabs">
+                    <button class="tab-button active" data-tab="merc">MindsEye Robotics</button>
+                    <button class="tab-button" data-tab="summitworks">SummitWorks Tech</button>
+                    <button class="tab-button" data-tab="lyle">Lyle</button>
+                    <button class="tab-button" data-tab="immersely">Immersely</button>
+                </div>
+                <div class="experience-content">
+                    <div class="tab-content active" id="merc">
+                        <h3>
+                            Robotics Software Developer Intern 
+                            <span class="company">@ MindsEye Robotics Corp</span>
+                        </h3>
+                        <p class="date">March 2025 - Present</p>
+                        <ul class="job-description">
+                            <li>Built a containerized ROS 2 operator dashboard for multi-UAV rescue missions, streaming live camera feeds, geospatial data, and mission telemetry into a real-time command-and-control UI</li>
+                            <li>Implemented a ROS-to-web integration layer (Python, Flask, OpenCV) to convert DDS sensor streams into low-latency, browser-ready video and JSON APIs</li>
+                            <li>Resolved complex ROS 2 DDS networking issues in Docker, enforcing UDP-only FastDDS and host networking to restore reliable pub/sub across container boundaries</li>
+                            <li>Developed mission-critical monitoring and safety features, including multi-camera visualization, casualty mapping, drone health panels, and emergency-stop controls</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="summitworks">
+                        <h3>
+                            Full Stack Web Developer 
+                            <span class="company">@ SummitWorks Technologies Inc</span>
+                        </h3>
+                        <p class="date">July 2019 - March 2023</p>
+                        <ul class="job-description">
+                            <li>Developed and supported enterprise-scale banking platforms using Java, Spring Boot, and Spring MVC</li>
+                            <li>Built and integrated RESTful and SOAP APIs using Spring REST and Apache AXIS</li>
+                            <li>Created Angular front-end components for transactional and customer-facing workflows</li>
+                            <li>Leveraged Spring DI, AOP, and Web Flow to improve modularity and service scalability</li>
+                            <li>Implemented full-stack solutions with JavaScript, SQL, and HTML, supporting complex business logic</li>
+                            <li>Collaborated with stakeholders to deliver reliable, maintainable software meeting regulatory and client needs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="lyle">
+                        <h3>
+                            iOS Developer 
+                            <span class="company">@ Lyle</span>
+                        </h3>
+                        <p class="date">August 2018 - April 2019</p>
+                        <ul class="job-description">
+                            <li>Designed and built applications for the iOS platform using Swift and Python</li>
+                            <li>Built a declarative framework for integrating with OAuth 1 and 2 standards used to connect all Lyle client accounts to major US social networks (Facebook, Instagram, etc.)</li>
+                            <li>Optimized the memory usage of the application</li>
+                            <li>Ensured the performance, quality, and responsiveness of application</li>
+                            <li>Collaborated with a team to define, design, and publish new features while working remotely</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="immersely">
+                        <h3>
+                            Website Developer & Administrator 
+                            <span class="company">@ Immersely</span>
+                        </h3>
+                        <p class="date">July 2017 - May 2018</p>
+                        <ul class="job-description">
+                            <li>Responsible for the creation and management of the website</li>
+                            <li>Installed and upgraded the database server</li>
+                            <li>Planned the database's system physical allocations, such as memory, disk space, network requirements</li>
+                            <li>Modified database structure using information given by the developers</li>
+                            <li>Ensured system security by allocating the appropriate user permissions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span>
+                Things I've Built
+            </h2>
+            <div class="projects-grid">
+                <!-- Featured Project 1 -->
+                <article class="project featured">
+                    <div class="project-content">
+                        <p class="project-label">Featured Project</p>
+                        <h3 class="project-title">Multi-UAV Mission Control Dashboard</h3>
+                        <div class="project-description">
+                            <p>
+                                A real-time operator dashboard for coordinating rescue drone missions. Streams live camera feeds, 
+                                geospatial data, and telemetry from multiple UAVs into a unified command interface. Built with 
+                                ROS2, Flask, and React, handling low-latency video streaming and mission-critical safety controls.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>ROS2</li>
+                            <li>Python</li>
+                            <li>Flask</li>
+                            <li>React</li>
+                            <li>Docker</li>
+                            <li>OpenCV</li>
+                            <li>WebRTC</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="#" class="project-link" aria-label="External Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="image-overlay"></div>
+                        <div class="placeholder-image">
+                            <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="600" height="400" fill="#172a45"/>
+                                <circle cx="300" cy="200" r="80" fill="#64ffda" opacity="0.1"/>
+                                <path d="M280 180 L280 220 L300 200 Z" fill="#64ffda"/>
+                                <path d="M300 200 L320 220 L320 180 Z" fill="#64ffda"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Featured Project 2 -->
+                <article class="project featured reverse">
+                    <div class="project-content">
+                        <p class="project-label">Featured Project</p>
+                        <h3 class="project-title">WhatsApp-to-ChatGPT Bridge</h3>
+                        <div class="project-description">
+                            <p>
+                                A lightweight messaging bridge that enables non-internet phones to access ChatGPT via WhatsApp/SMS. 
+                                Built for global accessibility, allowing basic phones with only cellular service to interact with AI. 
+                                Demonstrates API integration, webhook handling, and real-world problem solving.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>OpenAI API</li>
+                            <li>Twilio</li>
+                            <li>WhatsApp</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Junior00619" class="project-link" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="image-overlay"></div>
+                        <div class="placeholder-image">
+                            <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="600" height="400" fill="#172a45"/>
+                                <rect x="200" y="150" width="200" height="100" rx="10" fill="#64ffda" opacity="0.2"/>
+                                <circle cx="240" cy="180" r="8" fill="#64ffda"/>
+                                <circle cx="280" cy="180" r="8" fill="#64ffda"/>
+                                <circle cx="320" cy="180" r="8" fill="#64ffda"/>
+                                <path d="M240 210 Q250 220 260 210" stroke="#64ffda" fill="none" stroke-width="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Other Projects -->
+                <div class="other-projects">
+                    <h3 class="other-projects-title">Other Noteworthy Projects</h3>
+                    <div class="other-projects-grid">
+                        <article class="project-card">
+                            <div class="project-card-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                <div class="project-card-links">
+                                    <a href="#" aria-label="GitHub">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="project-card-title">Enterprise Banking API</h4>
+                            <p class="project-card-description">
+                                RESTful API for transactional banking workflows. Built with Spring Boot, implementing 
+                                secure authentication, transaction processing, and regulatory compliance.
+                            </p>
+                            <ul class="project-card-tech">
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>PostgreSQL</li>
+                                <li>REST</li>
+                            </ul>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-card-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                <div class="project-card-links">
+                                    <a href="#" aria-label="GitHub">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="project-card-title">OAuth Social Integration</h4>
+                            <p class="project-card-description">
+                                iOS framework for OAuth 1.0 and 2.0 integration with major social networks. 
+                                Handles token management, refresh flows, and API abstraction.
+                            </p>
+                            <ul class="project-card-tech">
+                                <li>Swift</li>
+                                <li>OAuth</li>
+                                <li>iOS</li>
+                            </ul>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-card-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                <div class="project-card-links">
+                                    <a href="#" aria-label="GitHub">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="project-card-title">Add Your Project Here</h4>
+                            <p class="project-card-description">
+                                This is a placeholder for your next project. Simply replace this card with your 
+                                actual project details, tech stack, and links.
+                            </p>
+                            <ul class="project-card-tech">
+                                <li>Technology</li>
+                                <li>Stack</li>
+                                <li>Here</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span>
+                Get In Touch
+            </h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm currently open to new opportunities and interesting projects. Whether you have a question, 
+                    want to collaborate, or just want to say hi, I'll do my best to get back to you!
+                </p>
+                <a href="mailto:alanpena91@gmail.com" class="btn btn-primary">Say Hello</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/Junior00619" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://linkedin.com/in/alan-pena-030a95103/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="mailto:alanpena91@gmail.com" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+            <p class="footer-text">Built by Alan Pena</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
